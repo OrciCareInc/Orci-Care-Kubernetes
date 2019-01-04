@@ -2,7 +2,13 @@
 #note: modify repository and revison accordingly.
 cryptoConfigMount:
   gitRepo:
-    repository: "https://ramesh-orci:Sushma%2312@github.com/OrciCareInc/Orci-Care-Kubernetes"
-#    repository: "https://github.com/OrciCareInc/Orci-Care-Kubernetes.git"
+    repository: "https://ramesh-orci:Sushma%2312@github.com/OrciCareInc/Orci-Care-Kubernetes.git"
+#    repository: "https://github.com/OrciCareInc/orci-care-kubernetes.git"
 #    repository: "https://github.com/collins-b/opensource.com.git"
+#    repository: "https://github.com/OrciCareInc/orci-care-kubernetes.git"
     revision: "master"
+cryptoConfigMount2:
+  gitRepo:
+    repository: "https://ramesh-orci:Sushma%2312@github.com/OrciCareInc/Orci-Care-Kubernetes.git"
+#    repository: "https://github.com/OrciCareInc/orci-care-kubernetes.git"
+    revision: "master"    

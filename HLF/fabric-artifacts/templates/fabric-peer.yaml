@@ -44,7 +44,7 @@ spec:
         - peer
         - node
         - start
-        - --peer-defaultchain=false
+#        - --peer-defaultchain=false
         env:
         - name: CORE_VM_ENDPOINT
           value: unix:///var/run/docker.sock
@@ -56,8 +56,10 @@ spec:
           value: {{ .Values.ingress.addr }}:7051
         - name: CORE_PEER_GOSSIP_EXTERNALENDPOINT
           value: {{ .Values.ingress.addr }}:7051
+        - name: CORE_PEER_CHAINCODELISTENADDRESS
+          value: 0.0.0.0:7052
         - name: CORE_PEER_MSPCONFIGPATH
-          value: /etc/crypto-config/opensource.com/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/msp
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/msp
         - name: CORE_PEER_LOCALMSPID
           value: {{ .Values.fabricOrg.msp }}
         image: {{ .Values.fabricPeer.image }}:{{ .Values.fabricPeer.tag }}
@@ -65,6 +67,7 @@ spec:
         workingDir: /opt/gopath/src/github.com/hyperledger/fabric
         ports:
         - containerPort: 7051
+        - containerPort: 7052
         - containerPort: 7053
         volumeMounts:
         - mountPath: /var/run/docker.sock

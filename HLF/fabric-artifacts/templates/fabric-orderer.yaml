@@ -53,11 +53,11 @@ spec:
         - name: ORDERER_GENERAL_GENESISMETHOD
           value: file
         - name: ORDERER_GENERAL_GENESISFILE
-          value:  /etc/crypto-config/opensource.com/HLF/channel-artifacts/orderer-genesis.block
+          value:  /etc/crypto-config/Orci-Care-Kubernetes/HLF/channel-artifacts/orderer-genesis.block
         - name: ORDERER_GENERAL_LOCALMSPID
           value: {{ .Values.fabricOrderer.msp }}
         - name: ORDERER_GENERAL_LOCALMSPDIR
-          value: /etc/crypto-config/opensource.com/HLF/crypto-config/ordererOrganizations/{{ .Values.fabricOrderer.orgDomain }}/orderers/orderer.{{ .Values.fabricOrderer.orgDomain }}/msp
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/ordererOrganizations/{{ .Values.fabricOrderer.orgDomain }}/orderers/orderer.{{ .Values.fabricOrderer.orgDomain }}/msp
         {{  if eq .Values.fabricOrderer.consensusType "kafka" }}
         - name: ORDERER_KAFKA_VERBOSE
           value: "true"

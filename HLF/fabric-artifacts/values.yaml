@@ -1,7 +1,7 @@
 # Default values for fabric-artifacts.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-fabricTag: &fabricTag x86_64-1.0.2
+fabricTag: &fabricTag 1.3.0
 replicaCount: 1
 image:
   repository: nginx
@@ -25,7 +25,7 @@ fabricOrg:
   domain: org1.example.com
   msp: Org1MSP
 fabricCa:
-  keyStoreHash: c4d6886fb9125ae7c69acbfcb965eeed7b7d39c0ce65293b369175aa3635cdaf
+  keyStoreHash: 9c3db3b99234b2357e0a7ec0c71b86ec706e08e56ffcc5b10dbf3261ec216755
   image: hyperledger/fabric-ca
   tag: *fabricTag
 fabricPeer:
