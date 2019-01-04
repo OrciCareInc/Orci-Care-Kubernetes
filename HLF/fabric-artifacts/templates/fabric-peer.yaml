@@ -92,7 +92,7 @@ metadata:
   labels:
     app: {{ .Release.Name }}-peer0-pvc
 spec:
-  storageClassName: standard
+  storageClassName: gp2
   accessModes:
   - ReadWriteOnce
   resources:

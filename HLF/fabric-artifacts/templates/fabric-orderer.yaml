@@ -82,7 +82,7 @@ spec:
       name: orderer-datadir
       namespace: {{ .Values.namespace }}
     spec:
-      storageClassName: standard
+      storageClassName: gp2
       accessModes:
       - ReadWriteOnce
       resources:
