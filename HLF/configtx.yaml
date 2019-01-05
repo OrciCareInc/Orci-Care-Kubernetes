@@ -277,7 +277,7 @@ Channel: &ChannelDefaults
 #            Type: ImplicitMeta
 #            Rule: "ANY Writers"
             Type: Signature
-            Rule: "OR('Org1MSP.admin', 'Org1MSP.client')"
+            Rule: "OR('Org1MSP.member', 'Org2MSP.member','OrdererMSP.member')"
         # By default, who may modify elements at this config level
         Admins:
             Type: ImplicitMeta
