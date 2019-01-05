@@ -271,16 +271,15 @@ Channel: &ChannelDefaults
         # Who may invoke the 'Deliver' API
         Readers:
             Type: ImplicitMeta
-            Rule: "ANY Readers"
+            Rule: "ALL Readers"
         # Who may invoke the 'Broadcast' API
         Writers:
             Type: ImplicitMeta
-            Rule: "OR('Org1MSP.admin', 'Org2MSP.admin','ANY Writers')"
-#            Rule: "ANY Writers"
+            Rule: "ALL Writers"
         # By default, who may modify elements at this config level
         Admins:
             Type: ImplicitMeta
-            Rule: "MAJORITY Admins"
+            Rule: "ALL Admins"
 
     # Capabilities describes the channel level capabilities, see the
     # dedicated Capabilities section elsewhere in this file for a full
