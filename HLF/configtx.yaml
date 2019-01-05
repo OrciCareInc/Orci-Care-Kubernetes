@@ -275,7 +275,8 @@ Channel: &ChannelDefaults
         # Who may invoke the 'Broadcast' API
         Writers:
             Type: ImplicitMeta
-            Rule: "ANY Writers"
+            Rule: "OR('Org1MSP.admin', 'Org2MSP.admin','ANY Writers')"
+#            Rule: "ANY Writers"
         # By default, who may modify elements at this config level
         Admins:
             Type: ImplicitMeta
