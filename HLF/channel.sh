@@ -1,8 +1,8 @@
 #!/bin/sh
 export GENESIS_BLOCK=/etc/crypto-config/Orci-Care-Kubernetes/HLF/channel-artifacts/orderer-channel.tx
 export POD_ID=`kubectl get pod | grep peer0 | cut -f1 -d' '`
-export ORDERER_ADDR="10.100.149.135"
-export ORG_DOMAIN="org1.example.com"
+export ORDERER_ADDR="10.100.216.145"
+export ORG_DOMAIN="org2.example.com"
 
 echo "POD_ID: " $POD_ID
 
