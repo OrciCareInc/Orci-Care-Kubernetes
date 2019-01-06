@@ -62,6 +62,14 @@ spec:
           value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/msp
         - name: CORE_PEER_LOCALMSPID
           value: {{ .Values.fabricOrg.msp }}
+        - name: CORE_PEER_TLS_ENABLED
+          value: "true"
+        - name: CORE_PEER_TLS_KEY_FILE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/tls/server.key
+        - name: CORE_PEER_TLS_CERT_FILE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/tls/server.crt
+        - name: CORE_PEER_TLS_ROOTCERT_FILE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/tls/ca.crt
         image: {{ .Values.fabricPeer.image }}:{{ .Values.fabricPeer.tag }}
         name: {{ .Release.Name }}-peer0
         workingDir: /opt/gopath/src/github.com/hyperledger/fabric

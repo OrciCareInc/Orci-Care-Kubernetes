@@ -40,10 +40,10 @@ spec:
       - command:
         - fabric-ca-server
         - start
-        - --ca.certfile
-        - /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/ca.{{ .Values.fabricOrg.domain }}-cert.pem
-        - --ca.keyfile
-        - /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/{{ .Values.fabricCa.keyStoreHash }}_sk
+#        - --ca.certfile
+#        - /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/ca.{{ .Values.fabricOrg.domain }}-cert.pem
+#        - --ca.keyfile
+#        - /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/{{ .Values.fabricCa.keyStoreHash }}_sk
         - -b
         - admin:adminpw
         - -d
@@ -54,6 +54,12 @@ spec:
           value: ca.{{ .Values.fabricOrg.domain }}
         - name: CORE_LOGGING_LEVEL
           value: DEBUG
+        - name: FABRIC_CA_SERVER_TLS_ENABLED
+          value: "true"
+        - name: FABRIC_CA_SERVER_TLS_CERTFILE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/ca.{{ .Values.fabricOrg.domain }}-cert.pem
+        - name: FABRIC_CA_SERVER_TLS_KEYFILE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/{{ .Values.fabricCa.keyStoreHash }}_sk
         image: {{ .Values.fabricCa.image }}:{{ .Values.fabricCa.tag }}
         name: {{ .Release.Name }}-ca
         ports:

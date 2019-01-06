@@ -61,6 +61,14 @@ spec:
         {{  if eq .Values.fabricOrderer.consensusType "kafka" }}
         - name: ORDERER_KAFKA_VERBOSE
           value: "true"
+        - name: ORDERER_GENERAL_TLS_ENABLED
+          value: "true"
+        - name: ORDERER_GENERAL_TLS_PRIVATEKEY
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/ordererOrganizations/{{ .Values.fabricOrderer.ordererDomain }}/orderers/orderer.{{ .Values.fabricOrderer.ordererDomain }}/tls/server.key
+        - name: ORDERER_GENERAL_TLS_CERTIFICATE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/ordererOrganizations/{{ .Values.fabricOrderer.ordererDomain }}/orderers/orderer.{{ .Values.fabricOrderer.ordererDomain }}/tls/server.crt
+        - name: ORDERER_GENERAL_TLS_ROOTCAS
+          value: [/etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/ordererOrganizations/{{ .Values.fabricOrderer.ordererDomain }}/orderers/orderer.{{ .Values.fabricOrderer.ordererDomain }}/tls/ca.crt]
         {{- end }}
         volumeMounts:
           - mountPath: /var/run/docker.sock
