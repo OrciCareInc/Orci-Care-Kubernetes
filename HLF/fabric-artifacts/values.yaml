@@ -25,7 +25,7 @@ fabricOrg:
   domain: org1.example.com
   msp: Org1MSP
 fabricCa:
-  keyStoreHash: 7ccf5cac0921daf49fa4bcbd9feca983a6d16f7179cfa9f69d5a575f17c3f3b8
+  keyStoreHash: 34f3bd4270432d2b64936f8100b8a0bdf1c2eae04a4b38ed0de7076cb7465bcd
   image: hyperledger/fabric-ca
   tag: *fabricTag
 fabricPeer:
