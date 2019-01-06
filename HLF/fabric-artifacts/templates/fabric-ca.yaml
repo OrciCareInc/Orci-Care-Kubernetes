@@ -40,10 +40,10 @@ spec:
       - command:
         - fabric-ca-server
         - start
-#        - --ca.certfile
-#        - /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/ca.{{ .Values.fabricOrg.domain }}-cert.pem
-#        - --ca.keyfile
-#        - /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/{{ .Values.fabricCa.keyStoreHash }}_sk
+        - --ca.certfile
+        - /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/ca.{{ .Values.fabricOrg.domain }}-cert.pem
+        - --ca.keyfile
+        - /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/ca/{{ .Values.fabricCa.keyStoreHash }}_sk
         - -b
         - admin:adminpw
         - -d
