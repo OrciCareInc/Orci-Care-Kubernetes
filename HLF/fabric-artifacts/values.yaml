@@ -14,18 +14,18 @@ service:
   internalPort: 80
 fabricOrderer:
   addr: 192.168.99.100
-#  orgDomain: org1.example.com
+  orgDomain: org1.example.com
   replicas: 1
   image: hyperledger/fabric-orderer
   tag: *fabricTag
-  orgDomain: example.com
+  ordererDomain: example.com
   consensusType: solo
   msp: OrdererMSP
 fabricOrg:
   domain: org1.example.com
   msp: Org1MSP
 fabricCa:
-  keyStoreHash: debf789e959edefbff76595ceecd3c7b54a3ccae268f54161762528bd9659876
+  keyStoreHash: 51378cd7a2f7ee1b88c88903e4b2e0eb58f6283b685323d2e8097138585878aa
   image: hyperledger/fabric-ca
   tag: *fabricTag
 fabricPeer:
