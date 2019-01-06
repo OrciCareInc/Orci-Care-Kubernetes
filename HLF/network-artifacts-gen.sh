@@ -70,7 +70,7 @@ OUTPUT_DIR=$PWD/channel-artifacts
 
 mkdir -p $OUTPUT_DIR
 
-./bin/configtxgen -profile TwoOrgsOrdererGenesis -outputBlock $OUTPUT_DIR/orderer-genesis.block -channelID mychannel
+./bin/configtxgen -profile TwoOrgsOrdererGenesis -outputBlock $OUTPUT_DIR/orderer-genesis.block
 ./bin/configtxgen -profile TwoOrgsChannel -outputCreateChannelTx $OUTPUT_DIR/orderer-channel.tx -channelID mychannel
 ./bin/configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate $OUTPUT_DIR/MSPanchors.tx -channelID mychannel -asOrg Org1MSP
 
