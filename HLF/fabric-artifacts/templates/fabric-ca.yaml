@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: "ca.{{ .Values.fabricOrderer.orgDomain }}"
+  name: ca
   namespace: {{ .Release.Namespace }}
 spec:
   loadBalancerIP: {{ .Values.ingress.addr }}

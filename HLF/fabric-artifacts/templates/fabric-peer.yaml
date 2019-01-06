@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: "peer0.{{ .Values.fabricOrderer.orgDomain }}"
+  name: peer0
   namespace: {{ .Values.namespace }}
 spec:
   loadBalancerIP: {{ .Values.ingress.addr }}
