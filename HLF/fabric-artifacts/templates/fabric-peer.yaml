@@ -58,8 +58,8 @@ spec:
           value: {{ .Values.ingress.addr }}:7051
         - name: CORE_PEER_GOSSIP_BOOTSTRAP
           value: {{ .Values.ingress.addr }}:7051
-        - name: CORE_PEER_CHAINCODELISTENADDRESS
-          value: {{ .Values.ingress.addr }}:7052
+#        - name: CORE_PEER_CHAINCODELISTENADDRESS
+#          value: {{ .Values.ingress.addr }}:7052
         - name: CORE_PEER_MSPCONFIGPATH
           value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/msp
         - name: CORE_PEER_LOCALMSPID
