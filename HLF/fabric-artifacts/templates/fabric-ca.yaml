@@ -3,10 +3,13 @@ kind: Service
 metadata:
   name: ca
   namespace: {{ .Release.Namespace }}
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: ca.org1.example.com
+    external-dns.alpha.kubernetes.io/target: ca.org1.example.com
 spec:
-  loadBalancerIP: {{ .Values.ingress.addr }}
-  externalIPs:
-  - {{ .Values.ingress.addr }}
+  #loadBalancerIP: {{ .Values.ingress.addr }}
+  #  externalIPs:
+  #- {{ .Values.ingress.addr }}
   ports:
   - name: "api"
     port: 7054

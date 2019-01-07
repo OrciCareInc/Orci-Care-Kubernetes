@@ -3,11 +3,13 @@ kind: Service
 metadata:
   name: orderer
   namespace: {{ .Release.Namespace }}
-
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: orderer.example.com
+    external-dns.alpha.kubernetes.io/target: orderer.example.com
 spec:
-  loadBalancerIP: {{ .Values.ingress.addr }}
-  externalIPs:
-  - {{ .Values.ingress.addr }}
+  #loadBalancerIP: {{ .Values.ingress.addr }}
+  #externalIPs:
+  #- {{ .Values.ingress.addr }}
   ports:
   - port: 7050
     protocol: TCP
@@ -31,10 +33,10 @@ spec:
         service: {{ .Release.Name }}-orderer
       namespace: {{ .Release.Namespace }}
     spec:
-      hostAliases:
-      - ip: "{{ .Values.fabricOrderer.addr }}"
-        hostnames:
-        - "orderer.{{ .Values.fabricOrderer.ordererDomain }}"
+      #      hostAliases:
+      #- ip: "{{ .Values.fabricOrderer.addr }}"
+      #  hostnames:
+      #  - "orderer.{{ .Values.fabricOrderer.ordererDomain }}"
       containers:
       - command:
         - orderer
