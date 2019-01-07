@@ -56,8 +56,8 @@ spec:
           value: {{ .Values.ingress.addr }}:7051
         - name: CORE_PEER_GOSSIP_EXTERNALENDPOINT
           value: {{ .Values.ingress.addr }}:7051
-        - name: CORE_PEER_GOSSIP_BOOTSTRAP
-          value: {{ .Values.ingress.addr }}:7051
+#        - name: CORE_PEER_GOSSIP_BOOTSTRAP
+#          value: {{ .Values.ingress.addr }}:7051
 #        - name: CORE_PEER_CHAINCODELISTENADDRESS
 #          value: {{ .Values.ingress.addr }}:7052
         - name: CORE_PEER_MSPCONFIGPATH
