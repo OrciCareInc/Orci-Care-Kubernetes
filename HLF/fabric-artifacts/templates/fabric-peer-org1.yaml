@@ -1,0 +1,126 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: peer0-org1
+  namespace: {{ .Values.namespace }}
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: peer0.org1.example.com
+    external-dns.alpha.kubernetes.io/target: peer0.org1.example.com
+    service.beta.kubernetes.io/aws-load-balancer-healthcheck-interval: "300"
+spec:
+  #loadBalancerIP: {{ .Values.ingress.addr }}
+  #  externalIPs:
+  #- {{ .Values.ingress.addr }}
+  ports:
+  - name: "requests"
+    port: 7051
+    protocol: TCP
+  - name: "chaincode"
+    port: 7052
+    protocol: TCP
+  - name: "events"
+    port: 7053
+    protocol: TCP
+  selector:
+    service: {{ .Release.Name }}-peer0-org1
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    service: {{ .Release.Name }}-peer0-org1
+  name: {{ .Release.Name }}-peer0-org1
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: 1
+  selector:
+    service: {{ .Release.Name }}-peer0-org1
+  template:
+    metadata:
+      labels:
+        service: {{ .Release.Name }}-peer0-org1
+      namespace: {{ .Values.namespace }}
+    spec:
+      #hostAliases:
+      #- ip: "{{ .Values.fabricOrderer.addr }}"
+      #  hostnames:
+      #  - "orderer.{{ .Values.fabricOrderer.ordererDomain }}"
+      containers:
+      - command:
+        - peer
+        - node
+        - start
+#        - --peer-defaultchain=false
+        env:
+        - name: CORE_VM_ENDPOINT
+          value: unix:///var/run/docker.sock
+        - name: CORE_VM_DOCKER_HOSTCONFIG_DNS
+          value: 10.100.0.10
+        - name: CORE_LOGGING_LEVEL
+          value: INFO
+        - name: CORE_PEER_ID
+          value: peer0.{{ .Values.fabricOrg1.domain }}
+        - name: CORE_PEER_ADDRESS
+          value: peer0.{{ .Values.fabricOrg1.domain }}:7051
+        - name: CORE_PEER_GOSSIP_EXTERNALENDPOINT
+          value: peer0.{{ .Values.fabricOrg1.domain }}:7051
+        - name: CORE_PEER_GOSSIP_BOOTSTRAP
+          value: peer0.{{ .Values.fabricOrg1.domain }}:7051
+        - name: CORE_PEER_GOSSIP_USELEADERELECTION
+          value: "true"
+        - name: CORE_PEER_GOSSIP_ORGLEADER
+          value: "false"
+        - name: CORE_PEER_CHAINCODELISTENADDRESS
+          value: 0.0.0.0:7052
+        - name: CORE_PEER_MSPCONFIGPATH
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg1.domain }}/peers/peer0.{{ .Values.fabricOrg1.domain }}/msp
+        - name: CORE_PEER_LOCALMSPID
+          value: {{ .Values.fabricOrg1.msp }}
+        - name: CORE_PEER_TLS_ENABLED
+          value: "true"
+        - name: CORE_PEER_TLS_KEY_FILE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg1.domain }}/peers/peer0.{{ .Values.fabricOrg1.domain }}/tls/server.key
+        - name: CORE_PEER_TLS_CERT_FILE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg1.domain }}/peers/peer0.{{ .Values.fabricOrg1.domain }}/tls/server.crt
+        - name: CORE_PEER_TLS_ROOTCERT_FILE
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg1.domain }}/peers/peer0.{{ .Values.fabricOrg1.domain }}/tls/ca.crt
+        image: {{ .Values.fabricPeer.image }}:{{ .Values.fabricPeer.tag }}
+        name: {{ .Release.Name }}-peer0-org1
+        workingDir: /opt/gopath/src/github.com/hyperledger/fabric
+        ports:
+        - containerPort: 7051
+        - containerPort: 7052
+        - containerPort: 7053
+        volumeMounts:
+        - mountPath: /var/run/docker.sock
+          name: {{ .Release.Name }}-docker-sock
+        - mountPath: /etc/crypto-config
+          name: {{ .Release.Name }}-crypto-config
+          readOnly: true
+        - mountPath: /var/hyperledger/production
+          name: {{ .Release.Name }}-fabric
+      volumes:
+      - name: {{ .Release.Name }}-docker-sock
+        hostPath:
+          path: /var/run/docker.sock
+      - name: {{ .Release.Name }}-fabric
+        persistentVolumeClaim:
+          claimName: {{ .Release.Name }}-peer0-org1-pvc
+      - name: {{ .Release.Name }}-crypto-config
+{{ toYaml .Values.cryptoConfigMount | indent 8 }}
+---
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ .Release.Name }}-peer0-org1-pvc
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: {{ .Release.Name }}-peer0-org1-pvc
+spec:
+  storageClassName: gp2
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi

@@ -6,6 +6,7 @@ metadata:
   annotations:
     external-dns.alpha.kubernetes.io/hostname: orderer.example.com
     external-dns.alpha.kubernetes.io/target: orderer.example.com
+    service.beta.kubernetes.io/aws-load-balancer-healthcheck-interval: "300"
 spec:
   #loadBalancerIP: {{ .Values.ingress.addr }}
   #externalIPs:
@@ -49,7 +50,7 @@ spec:
         - name: GODEBUG
           value: netdns=go+1
         - name: ORDERER_GENERAL_LOGLEVEL
-          value: debug
+          value: INFO
         - name: ORDERER_GENERAL_LISTENADDRESS
           value: 0.0.0.0
         - name: ORDERER_GENERAL_GENESISMETHOD

@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: peer0
+  name: peer0-org2
   namespace: {{ .Values.namespace }}
   annotations:
-    external-dns.alpha.kubernetes.io/hostname: peer0.org1.example.com
-    external-dns.alpha.kubernetes.io/target: peer0.org1.example.com
+    external-dns.alpha.kubernetes.io/hostname: peer0.org2.example.com
+    external-dns.alpha.kubernetes.io/target: peer0.org2.example.com
+    service.beta.kubernetes.io/aws-load-balancer-healthcheck-interval: "300"
 spec:
   #loadBalancerIP: {{ .Values.ingress.addr }}
   #  externalIPs:
@@ -21,30 +22,30 @@ spec:
     port: 7053
     protocol: TCP
   selector:
-    service: {{ .Release.Name }}-peer0
+    service: {{ .Release.Name }}-peer0-org2
   type: LoadBalancer
 ---
 apiVersion: v1
 kind: ReplicationController
 metadata:
   labels:
-    service: {{ .Release.Name }}-peer0
-  name: {{ .Release.Name }}-peer0
+    service: {{ .Release.Name }}-peer0-org2
+  name: {{ .Release.Name }}-peer0-org2
   namespace: {{ .Values.namespace }}
 spec:
   replicas: 1
   selector:
-    service: {{ .Release.Name }}-peer0
+    service: {{ .Release.Name }}-peer0-org2
   template:
     metadata:
       labels:
-        service: {{ .Release.Name }}-peer0
+        service: {{ .Release.Name }}-peer0-org2
       namespace: {{ .Values.namespace }}
     spec:
-      hostAliases:
-      - ip: "{{ .Values.fabricOrderer.addr }}"
-        hostnames:
-        - "orderer.{{ .Values.fabricOrderer.ordererDomain }}"
+      #hostAliases:
+      #- ip: "{{ .Values.fabricOrderer.addr }}"
+      #  hostnames:
+      #  - "orderer.{{ .Values.fabricOrderer.ordererDomain }}"
       containers:
       - command:
         - peer
@@ -54,37 +55,38 @@ spec:
         env:
         - name: CORE_VM_ENDPOINT
           value: unix:///var/run/docker.sock
+        - name: CORE_VM_DOCKER_HOSTCONFIG_DNS
+          value: 10.100.0.10
         - name: CORE_LOGGING_LEVEL
-          value: DEBUG
+          value: INFO
         - name: CORE_PEER_ID
-          value: peer0.{{ .Values.fabricOrg.domain }}
+          value: peer0.{{ .Values.fabricOrg2.domain }}
         - name: CORE_PEER_ADDRESS
-          #value: {{ .Values.ingress.addr }}:7051
-          value: peer0.{{ .Values.fabricOrg.domain }}:7051
+          value: peer0.{{ .Values.fabricOrg2.domain }}:7051
         - name: CORE_PEER_GOSSIP_EXTERNALENDPOINT
-          #value: {{ .Values.ingress.addr }}:7051
-          value: peer0.{{ .Values.fabricOrg.domain }}:7051
+          value: peer0.{{ .Values.fabricOrg2.domain }}:7051
         - name: CORE_PEER_GOSSIP_BOOTSTRAP
-          #value: {{ .Values.ingress.addr }}:7051
-          value: peer0.{{ .Values.fabricOrg.domain }}:7051
+          value: peer0.{{ .Values.fabricOrg2.domain }}:7051
+        - name: CORE_PEER_GOSSIP_USELEADERELECTION
+          value: "true"
+        - name: CORE_PEER_GOSSIP_ORGLEADER
+          value: "false"
         - name: CORE_PEER_CHAINCODELISTENADDRESS
-          #value: {{ .Values.ingress.addr }}:7052
-          #value: peer0.{{ .Values.fabricOrg.domain }}:7052
           value: 0.0.0.0:7052
         - name: CORE_PEER_MSPCONFIGPATH
-          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/msp
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg2.domain }}/peers/peer0.{{ .Values.fabricOrg2.domain }}/msp
         - name: CORE_PEER_LOCALMSPID
-          value: {{ .Values.fabricOrg.msp }}
+          value: {{ .Values.fabricOrg2.msp }}
         - name: CORE_PEER_TLS_ENABLED
           value: "true"
         - name: CORE_PEER_TLS_KEY_FILE
-          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/tls/server.key
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg2.domain }}/peers/peer0.{{ .Values.fabricOrg2.domain }}/tls/server.key
         - name: CORE_PEER_TLS_CERT_FILE
-          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/tls/server.crt
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg2.domain }}/peers/peer0.{{ .Values.fabricOrg2.domain }}/tls/server.crt
         - name: CORE_PEER_TLS_ROOTCERT_FILE
-          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg.domain }}/peers/peer0.{{ .Values.fabricOrg.domain }}/tls/ca.crt
+          value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg2.domain }}/peers/peer0.{{ .Values.fabricOrg2.domain }}/tls/ca.crt
         image: {{ .Values.fabricPeer.image }}:{{ .Values.fabricPeer.tag }}
-        name: {{ .Release.Name }}-peer0
+        name: {{ .Release.Name }}-peer0-org2
         workingDir: /opt/gopath/src/github.com/hyperledger/fabric
         ports:
         - containerPort: 7051
@@ -104,17 +106,17 @@ spec:
           path: /var/run/docker.sock
       - name: {{ .Release.Name }}-fabric
         persistentVolumeClaim:
-          claimName: {{ .Release.Name }}-peer0-pvc
+          claimName: {{ .Release.Name }}-peer0-org2-pvc
       - name: {{ .Release.Name }}-crypto-config
 {{ toYaml .Values.cryptoConfigMount | indent 8 }}
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: {{ .Release.Name }}-peer0-pvc
+  name: {{ .Release.Name }}-peer0-org2-pvc
   namespace: {{ .Values.namespace }}
   labels:
-    app: {{ .Release.Name }}-peer0-pvc
+    app: {{ .Release.Name }}-peer0-org2-pvc
 spec:
   storageClassName: gp2
   accessModes:
