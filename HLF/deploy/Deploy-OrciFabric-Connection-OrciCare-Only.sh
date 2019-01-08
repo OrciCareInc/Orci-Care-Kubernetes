@@ -15,7 +15,7 @@ export ORG2_POD_ID=`kubectl get pod | grep peer0-org2 | cut -f1 -d' '`
 CARDNAME=PeerAdmin@orcicarenet-network-orcicare-only
 CONNECTION_FILENAME=/etc/crypto-config/Orci-Care-Kubernetes/HLF/deploy/connection-orcifabric-orcicare-only.json
 ORG1_ADMIN_USER_MSP_SIGNCERT_FILENAME=/etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts/Admin@org1.example.com-cert.pem
-ORG1_ADMIN_USER_MSP_KEYSTORE_FILENAME_PATH=/etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/orcicare.orcifabric.com/users/Admin@orcicare.orcifabric.com/msp/keystore/
+ORG1_ADMIN_USER_MSP_KEYSTORE_FILENAME_PATH=/etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore/
 
 TargetFile="$(ls "$ORG1_ADMIN_USER_MSP_KEYSTORE_FILENAME_PATH" -t | head -n1)"
 ORG1_ADMIN_USER_MSP_KEYSTORE_FILENAME=$ORG1_ADMIN_USER_MSP_KEYSTORE_FILENAME_PATH$TargetFile
