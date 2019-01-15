@@ -58,7 +58,7 @@ spec:
         - name: CORE_VM_DOCKER_HOSTCONFIG_DNS
           value: 10.100.0.10
         - name: CORE_LOGGING_LEVEL
-          value: INFO
+          value: DEBUG
         - name: CORE_PEER_ID
           value: peer0.{{ .Values.fabricOrg1.domain }}
         - name: CORE_PEER_ADDRESS
@@ -77,6 +77,14 @@ spec:
           value: /etc/crypto-config/Orci-Care-Kubernetes/HLF/crypto-config/peerOrganizations/{{ .Values.fabricOrg1.domain }}/peers/peer0.{{ .Values.fabricOrg1.domain }}/msp
         - name: CORE_PEER_LOCALMSPID
           value: {{ .Values.fabricOrg1.msp }}
+        - name: CORE_LEDGER_STATE_STATEDATABASE
+          value: "CouchDB"
+        - name: CORE_LEDGER_STATE_COUCHDBCONFIG_COUCHDBADDRESS
+          value: couchdb0.org1.example.com:5984
+        - name: CORE_LEDGER_STATE_COUCHDBCONFIG_USERNAME
+          value: "CouchOrci0"
+        - name: CORE_LEDGER_STATE_COUCHDBCONFIG_PASSWORD
+          value: "CouchOrciDB00"
         - name: CORE_PEER_TLS_ENABLED
           value: "true"
         - name: CORE_PEER_TLS_KEY_FILE

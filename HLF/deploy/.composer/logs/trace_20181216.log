@@ -1,0 +1,187 @@
+2018-12-16T18:33:29.545Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:29.547Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:29.976Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: error installing chaincode code orcicare-network4:0.0.2(chaincode /var/hyperledger/production/chaincodes/orcicare-network4.0.0.2 exists)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2018-12-16T18:33:29.980Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: error installing chaincode code orcicare-network4:0.0.2(chaincode /var/hyperledger/production/chaincodes/orcicare-network4.0.0.2 exists)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2018-12-16T18:33:37.561Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:37.562Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:37.976Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: error installing chaincode code orcicare-network4:0.0.2(chaincode /var/hyperledger/production/chaincodes/orcicare-network4.0.0.2 exists)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2018-12-16T18:33:37.986Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: error installing chaincode code orcicare-network4:0.0.2(chaincode /var/hyperledger/production/chaincodes/orcicare-network4.0.0.2 exists)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2018-12-16T18:33:45.590Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:45.591Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:46.003Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: error installing chaincode code orcicare-network4:0.0.2(chaincode /var/hyperledger/production/chaincodes/orcicare-network4.0.0.2 exists)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2018-12-16T18:33:46.013Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: error installing chaincode code orcicare-network4:0.0.2(chaincode /var/hyperledger/production/chaincodes/orcicare-network4.0.0.2 exists)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2018-12-16T18:33:53.596Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:53.598Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:56.978Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:33:58.449Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:33:58.451Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:34:01.502Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:01.502Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:01.503Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:01.503Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:01.504Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:04.510Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:04.511Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:04.511Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:04.511Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:04.511Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:07.519Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:07.519Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:07.519Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:07.519Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:07.519Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:10.523Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:10.523Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:10.523Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:10.524Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:10.524Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:13.528Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:13.528Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:13.528Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:13.528Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:13.528Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:16.537Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:16.538Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:16.538Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:16.538Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:16.538Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:19.546Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:19.546Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:19.546Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:19.547Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:19.547Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:22.553Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:29.124Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:34:29.125Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:34:32.173Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:32.173Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:34:32.174Z WARN    :HLFQueryHandler          :queryChaincode()          Peer peer0.orcicare.orcifabric.com failed to respond. Error: Failed to connect before the deadline {}$
+2018-12-16T18:34:35.178Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:38:08.168Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:38:08.169Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:08.111Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:08.113Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:16.077Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:16.078Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:24.099Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:24.100Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:32.076Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:32.077Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:35.458Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:35.458Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:36.925Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:36.927Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:39:39.977Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:39.978Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:39.978Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:39.978Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:39.979Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:42.986Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:42.986Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:42.986Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:42.986Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:42.987Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:45.995Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:45.995Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:45.995Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:45.995Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:45.995Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:49.000Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:49.000Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:49.000Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:49.000Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:49.001Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:52.005Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:52.005Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:52.005Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:52.005Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:52.005Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:55.013Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:55.013Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:55.013Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:55.013Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:55.013Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:58.022Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:39:58.022Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:58.023Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: getChannelConfig - Failed getting channel config. Error: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:58.023Z ERROR   :HLFConnectionManager     :fabric-client()           [Channel.js]: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:39:58.023Z WARN    :HLFConnection            :_initializeChannel()      error trying to initialize channel. Error returned Error: Error: Failed to connect before the deadline {}$
+2018-12-16T18:40:01.029Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:40:07.591Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:40:07.593Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:40:10.637Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:40:10.638Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: Failed to connect before the deadline
+    at checkState (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:838:16) {}$
+2018-12-16T18:40:10.638Z WARN    :HLFQueryHandler          :queryChaincode()          Peer peer0.orcicare.orcifabric.com failed to respond. Error: Failed to connect before the deadline {}$
+2018-12-16T18:40:13.645Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2018-12-16T18:41:11.185Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:7051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:41:11.186Z WARN    :HLFConnection            :_connectToEventHubs()     event hub localhost:8051 failed to connect: 14 UNAVAILABLE: Connect Failed {}$
+2018-12-16T18:41:11.591Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: error installing chaincode code orcicare-network4:0.0.3(chaincode /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3 exists)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2018-12-16T18:41:11.596Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: error installing chaincode code orcicare-network4:0.0.3(chaincode /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3 exists)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2018-12-17T00:47:41.287Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub localhost:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-17T00:47:57.076Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.jfkmedical.orcifabric.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-17T00:47:57.084Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer1.jfkmedical.orcifabric.com:8051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-17T00:48:10.887Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.uclahospital.orcifabric.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-17T00:48:18.399Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.uscmedical.orcifabric.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-17T00:48:18.412Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer1.uscmedical.orcifabric.com:8051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-17T00:48:18.412Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 8 defined hubs to listen on for chaincode events {}$

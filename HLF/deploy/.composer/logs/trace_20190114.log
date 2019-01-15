@@ -1,0 +1,153 @@
+2019-01-14T14:16:15.987Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: cannot get package for chaincode (orcicare-network4:0.0.3)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2019-01-14T14:16:21.604Z WARN    :HLFConnection            :_validatePeerResponses()  Response from attempted peer comms was an error: Error: cannot get package for chaincode (orcicare-network4:0.0.3) {}$
+2019-01-14T14:16:29.770Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'dbb9cf24b168534b96d04ce486668235b0d166459c99c94d200924bcced88330', must be activated (ACTIVATION_REQUIRED)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2019-01-14T14:16:29.771Z WARN    :HLFQueryHandler          :queryChaincode()          query payload returned an error: Error: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'dbb9cf24b168534b96d04ce486668235b0d166459c99c94d200924bcced88330', must be activated (ACTIVATION_REQUIRED) {}$
+2019-01-14T14:16:29.771Z ERROR   :HLFConnection            :ping()                    {"message":"Error trying to ping. Error: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'dbb9cf24b168534b96d04ce486668235b0d166459c99c94d200924bcced88330', must be activated (ACTIVATION_REQUIRED)","stack":"Error: Error trying to ping. Error: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'dbb9cf24b168534b96d04ce486668235b0d166459c99c94d200924bcced88330', must be activated (ACTIVATION_REQUIRED)\n    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)\n    at <anonymous>"}$
+2019-01-14T14:16:29.831Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: cannot retrieve package for chaincode orcicare-network4/0.0.3, error open /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3: no such file or directory
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2019-01-14T14:16:29.873Z WARN    :HLFConnection            :_validatePeerResponses()  Response from attempted peer comms was an error: Error: cannot retrieve package for chaincode orcicare-network4/0.0.3, error open /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3: no such file or directory {}$
+2019-01-14T14:19:03.609Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.org1.example.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2019-01-14T14:19:03.609Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T14:21:17.437Z WARN    :HLFConnection            :_checkEventHubStrategy()  No connected event hubs found, attempting to re-establish event hubs {}$
+2019-01-14T14:21:17.540Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: cannot retrieve package for chaincode orcicare-network4/0.0.3, error open /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3: no such file or directory
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/grpc/src/client.js:586:7 {}$
+2019-01-14T14:21:19.681Z WARN    :HLFConnection            :_validatePeerResponses()  Response from attempted peer comms was an error: Error: cannot retrieve package for chaincode orcicare-network4/0.0.3, error open /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3: no such file or directory {}$
+2019-01-14T14:22:20.253Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.org1.example.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2019-01-14T14:22:20.253Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T14:36:14.814Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: cannot get package for chaincode (orcicare-network4:0.0.3)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2019-01-14T14:36:19.220Z WARN    :HLFConnection            :_validatePeerResponses()  Response from attempted peer comms was an error: Error: cannot get package for chaincode (orcicare-network4:0.0.3) {}$
+2019-01-14T14:36:27.672Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'd1a8d6316cd8dbad07d0289e019b41083c945dbfc804ea4342d46a8e7bf58a66', must be activated (ACTIVATION_REQUIRED)
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2019-01-14T14:36:27.673Z WARN    :HLFQueryHandler          :queryChaincode()          query payload returned an error: Error: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'd1a8d6316cd8dbad07d0289e019b41083c945dbfc804ea4342d46a8e7bf58a66', must be activated (ACTIVATION_REQUIRED) {}$
+2019-01-14T14:36:27.674Z ERROR   :HLFConnection            :ping()                    {"message":"Error trying to ping. Error: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'd1a8d6316cd8dbad07d0289e019b41083c945dbfc804ea4342d46a8e7bf58a66', must be activated (ACTIVATION_REQUIRED)","stack":"Error: Error trying to ping. Error: transaction returned with failure: Error: The current identity, with the name 'admin' and the identifier 'd1a8d6316cd8dbad07d0289e019b41083c945dbfc804ea4342d46a8e7bf58a66', must be activated (ACTIVATION_REQUIRED)\n    at _checkRuntimeVersions.then.catch (/home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/composer-connector-hlfv1/lib/hlfconnection.js:886:34)\n    at <anonymous>"}$
+2019-01-14T14:36:27.717Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: cannot retrieve package for chaincode orcicare-network4/0.0.3, error open /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3: no such file or directory
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-cli/node_modules/grpc/src/client.js:586:7 {}$
+2019-01-14T14:36:27.772Z WARN    :HLFConnection            :_validatePeerResponses()  Response from attempted peer comms was an error: Error: cannot retrieve package for chaincode orcicare-network4/0.0.3, error open /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3: no such file or directory {}$
+2019-01-14T14:37:45.748Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.org1.example.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2019-01-14T14:37:45.827Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.org2.example.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2019-01-14T14:37:45.828Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T14:43:06.896Z ERROR   :HLFConnectionManager     :fabric-client()           [client-utils.js]: sendPeersProposal - Promise is rejected: Error: cannot retrieve package for chaincode orcicare-network4/0.0.3, error open /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3: no such file or directory
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/fabric-client/lib/Peer.js:114:16
+    at /home/ubuntu/.nvm/versions/node/v8.11.1/lib/node_modules/composer-rest-server/node_modules/grpc/src/client.js:586:7 {}$
+2019-01-14T14:43:06.956Z WARN    :HLFConnection            :_validatePeerResponses()  Response from attempted peer comms was an error: Error: cannot retrieve package for chaincode orcicare-network4/0.0.3, error open /var/hyperledger/production/chaincodes/orcicare-network4.0.0.3: no such file or directory {}$
+2019-01-14T14:44:06.939Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.org1.example.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2019-01-14T14:44:07.458Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.org2.example.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2019-01-14T14:44:07.458Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T21:50:37.711Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T21:50:37.712Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T21:50:37.728Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T21:50:37.728Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T21:50:37.729Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T21:50:40.744Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:07:38.196Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:07:38.197Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:07:38.213Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:07:38.214Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:07:38.214Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:07:41.229Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:12:44.730Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:12:44.731Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:12:44.746Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:12:44.746Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:12:44.747Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:12:47.761Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:17:51.256Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:17:51.257Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:17:51.273Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:17:51.273Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:17:51.274Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:17:54.287Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:22:57.799Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:22:57.800Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:22:57.815Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:22:57.815Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:22:57.816Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:23:00.829Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:28:04.355Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:28:04.356Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:28:04.371Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:28:04.372Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:28:04.373Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:28:07.386Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:33:10.913Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:33:10.914Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:33:10.930Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:33:10.931Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:33:10.932Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:33:13.946Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:38:17.453Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:38:17.454Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:38:17.469Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:38:17.469Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:38:17.470Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:38:20.483Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:43:24.011Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:43:24.012Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:43:24.028Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:43:24.029Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:43:24.030Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:43:27.044Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:48:30.549Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:48:30.550Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:48:30.566Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:48:30.567Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:48:30.568Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:48:33.582Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:53:37.099Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:53:37.100Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:53:37.115Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:53:37.116Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:53:37.116Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:53:40.130Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T22:58:43.667Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:58:43.668Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:58:43.684Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T22:58:43.684Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T22:58:43.685Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T22:58:46.699Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T23:03:50.230Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:03:50.231Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:03:50.248Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:03:50.248Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:03:50.249Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T23:03:53.264Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T23:26:42.079Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:26:42.080Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:26:42.096Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:26:42.096Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:26:42.097Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T23:26:45.110Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T23:31:48.610Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:31:48.611Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:31:48.628Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:31:48.628Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:31:48.629Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T23:31:51.644Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T23:36:55.193Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:36:55.194Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:36:55.212Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:36:55.212Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:36:55.213Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T23:36:58.228Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T23:42:01.806Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:42:01.807Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:42:01.825Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:42:01.825Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:42:01.826Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T23:42:04.841Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$
+2019-01-14T23:47:08.360Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:47:08.361Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org1.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:47:08.377Z ERROR   :HLFConnectionManager     :fabric-client()           [ChannelEventHub.js]: _connect - timed out after:300000 {}$
+2019-01-14T23:47:08.377Z WARN    :HLFConnection            :_connectToEventHubs()     event hub peer0.org2.example.com:7051 failed to connect: Unable to connect to the peer event hub {}$
+2019-01-14T23:47:08.378Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 2 defined hubs to listen on for chaincode events {}$
+2019-01-14T23:47:11.392Z ERROR   :HLFConnectionManager     :fabric-client()           [Remote.js]: Error: Failed to connect before the deadline {}$

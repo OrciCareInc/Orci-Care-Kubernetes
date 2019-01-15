@@ -1,0 +1,78 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: composer-org1
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: composer.org1.example.com
+    external-dns.alpha.kubernetes.io/target: composer.org1.example.com
+spec:
+  selector:
+    app: composer1
+  ports:
+    - protocol: TCP
+      targetPort: coomposer1-port
+      port: 3000
+      nodePort: 32000
+      name: composer1-port
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: composer1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: composer1
+  template:
+    metadata:
+      labels:
+        app: composer1
+    spec:
+      volumes:
+      - name: data
+        gitRepo:
+          repository: "https://ramesh-orci:Sushma%2312@github.com/OrciCareInc/Orci-Care-Kubernetes.git"
+          revision: "master"
+#      initContainers: 
+#      - name: init-composer-org1
+#        image: "hyperledger/composer-rest-server:latest"
+#        command: 
+#        - "chown"
+#        - "-R"
+#        - "composer:composer"
+#        - "/home/composer/.composer"
+#        volumeMounts:
+#        - mountPath: /home/composer/.composer
+#          name: data
+#          subpath: Orci-Care-Kubernetes/HLF/deploy/.composer
+#          readOnly: false
+#        - mountPath: /home/crypto-config
+#          name: data
+#          subpath: Orci-Care-Kubernetes/HLF/crypto-config
+#          readOnly: false
+      containers:
+      - name: composer-org1
+        image: "hyperledger/composer-rest-server:latest"
+        volumeMounts:
+        - mountPath: /home/composer/.composer
+          name: data
+          subpath: Orci-Care-Kubernetes/HLF/deploy/.composer
+          readOnly: false
+        - mountPath: /home/crypto-config
+          name: data
+          subpath: Orci-Care-Kubernetes/HLF/crypto-config
+          readOnly: false
+        env:
+        - name: COMPOSER_CARD
+          value: "ORADMIN1@orcicare-network4"
+        - name: COMPOSER_NAMESPACES
+          value: "never"
+        - name: COMPOSER_AUTHENTICATION
+          value: "true"
+        - name: COMPOSER_MULTIUSER
+          value: "false"
+        ports:
+        - name: composer1-port
+          containerPort: 32000

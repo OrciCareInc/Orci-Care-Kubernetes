@@ -53,7 +53,7 @@ spec:
         - name: FABRIC_CA_SERVER_CA_NAME
           value: ca.{{ .Values.fabricOrg1.domain }}
         - name: CORE_LOGGING_LEVEL
-          value: DEBUG
+          value: INFO
         - name: FABRIC_CA_SERVER_TLS_ENABLED
           value: "true"
         - name: FABRIC_CA_SERVER_TLS_CERTFILE

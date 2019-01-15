@@ -1,0 +1,8 @@
+2018-12-16T18:30:35.080Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub localhost:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-16T18:30:35.090Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub localhost:8051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-16T18:35:43.167Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.jfkmedical.orcifabric.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-16T18:35:59.718Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.uclahospital.orcifabric.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-16T18:35:59.725Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer1.uclahospital.orcifabric.com:8051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-16T18:36:12.473Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer0.uscmedical.orcifabric.com:7051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-16T18:36:12.519Z WARN    :HLFConnection            :_registerForChaincodeEven Eventhub peer1.uscmedical.orcifabric.com:8051 for CC Events disconnected with error 14 UNAVAILABLE: EOF {}$
+2018-12-16T18:36:12.520Z WARN    :HLFConnection            :_registerForChaincodeEven could not find any connected event hubs out of 8 defined hubs to listen on for chaincode events {}$

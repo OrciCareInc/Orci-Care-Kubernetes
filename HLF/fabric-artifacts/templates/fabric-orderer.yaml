@@ -50,7 +50,7 @@ spec:
         - name: GODEBUG
           value: netdns=go+1
         - name: ORDERER_GENERAL_LOGLEVEL
-          value: INFO
+          value: DEBUG
         - name: ORDERER_GENERAL_LISTENADDRESS
           value: 0.0.0.0
         - name: ORDERER_GENERAL_GENESISMETHOD
